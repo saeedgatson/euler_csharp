@@ -18,7 +18,7 @@ class P002EvenFibonacciNumbers {
       }
       iterator++;
     }
-    Console.WriteLine(sum);
+    Console.WriteLine("The sum of the even-valued Fibonacci terms that do not exceed four million, is {0}.", sum);
   }
 
   public static int fib(int number) {
