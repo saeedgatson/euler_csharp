@@ -108,10 +108,10 @@ class P013LargeSum {
 
     BigInteger sum = BigInteger.Zero;
     for (int i = 0; i < data.Length; i++) {
-      sum = BigInteger.Add(new BigInteger(Convert.ToUInt64(data[i])), sum);
+      sum = BigInteger.Add(BigInteger.Parse(data[i]), sum);
     }
 
     String sum_str = sum.ToString();
-    Console.WriteLine(sum_str.Substring(0, 10));
+    Console.WriteLine("The first ten digits of the sum of the 50-digit number is {0}.", sum_str.Substring(0, 10));
   }
 }
