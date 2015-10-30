@@ -29,8 +29,8 @@ public class P020FactorialDigitSum {
     BigInteger ten = 10;
 
     while(number != 0) {
-      sum += number % 10; //sum.add(number.mod(ten));
-      number = number / ten; //number.divide(ten);
+      sum += number % 10;
+      number = number / ten;
     }
     return sum;
   }
