@@ -5,13 +5,6 @@ using System;
 public class P019CountingSundays {
   public static void Main() {
     int sundayCount = 0;
-    // LocalDate start = LocalDate.of(1901, 1, 1);
-    // LocalDate end = LocalDate.of(2000, 12, 31);
-    //
-    // for (LocalDate date = start; date.isBefore(end); date = date.plusDays(1)) {
-    //   if(DayOfWeek.SUNDAY == date.getDayOfWeek() && date.getDayOfMonth() == 1)
-    //     sundayCount++;
-    // }
     DateTime start = new DateTime(1901, 1, 1);
     DateTime end = new DateTime(2000, 12, 31);
 
