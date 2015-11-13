@@ -8,9 +8,9 @@ using System.Text;
 public class P036DoubleBasePalindromes {
   public static bool isDoublePalindrome(int number){
     string numberString = number.ToString();
-    string reverseNumber = ReverseString(numberString); //new StringBuilder(numberString).reverse().ToString();
+    string reverseNumber = ReverseString(numberString);
     string binaryNumber = Convert.ToString(number, 2);
-    string reverseBinaryNumber = ReverseString(binaryNumber); //new StringBuilder(binaryNumber).reverse().ToString();
+    string reverseBinaryNumber = ReverseString(binaryNumber);
     return reverseNumber.Equals(numberString) && reverseBinaryNumber.Equals(binaryNumber);
   }
 
